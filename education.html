@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./education.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <title>Archico</title>
+    </head>
+
+    <body>
+
+        <!-- NAVIGATION BAR -->
+        <nav>
+        
+            <a href="index.html" class="logo"><span>Archico</span><a>
+                    <ul class="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="education.html" class="active">Education</a></li>
+                    </ul>
+        
+                    <div class="nav-main">
+                        <!-- <a href="#" class="user">Sign In</a> -->
+                        <!-- <a href="#section-footer" class="user">Contact</a> -->
+                        <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
+                        <i class='bx bxs-message-edit bx-sm feedback-button' id="feedback-button"></i>
+                    </div>
+        </nav>
+
+        <!-- FEEDBACK FORM -->
+        <section class="section-form">
+            <div class="form-overlay hidden"></div>
+        
+            <div class="form-window hidden" id="form-window">
+        
+                <div class="form-header">
+                    <h2 id="form-h2">Feedback</h2>
+                    <div class="form-close-button">&times;</div>
+                </div>
+                <div class="form-body">
+                    <div class="form-element">
+                        <label for="form-email">Email</label>
+                        <input type="email" id="form-text-email" placeholder="Enter email">
+                    </div>
+                    <div class="form-element">
+                        <label for="form-text-name">Name</label>
+                        <input type="text" id="form-text-name" placeholder="Enter name">
+                    </div>
+                    <div class="form-element">
+                        <label for="form-text-area">Feedback</label>
+                        <textarea name="" id="form-text-area" cols="30" rows="10" placeholder="Enter feedback"></textarea>
+                    </div>
+                    <div class="form-element-row">
+                        <input type="checkbox" id="form-checkbox">
+                        <label for="form-checkbox">My Data is Valid</label>
+                    </div>
+                    <div class="form-element" id="button-container">
+                        <button class="form-button disabled">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            document.querySelector("#feedback-button").addEventListener("click", function () {
+                document.querySelector("#form-window").classList.remove("hidden");
+                document.querySelector(".form-overlay").classList.remove("hidden");
+                // document.querySelector("body").style.overflow = "hidden";
+            });
+
+            document.querySelector(".form-close-button").addEventListener("click", function () {
+                document.querySelector("#form-window").classList.add("hidden");
+                document.querySelector(".form-overlay").classList.add("hidden");
+                // document.querySelector("body").style.overflow = "scroll";
+            });
+
+            document.querySelector(".form-overlay").addEventListener("click", function () {
+                document.querySelector("#form-window").classList.add("hidden");
+                document.querySelector(".form-overlay").classList.add("hidden");
+            });
+
+            // document.addEventListener("keydown", function (e) {
+            //     console.log(e.key);
+
+            //     if (e.key === "Escape" && !document.querySelector("#form-window").classList.contains("hidden")) {
+            //         function () {
+            //             document.querySelector("#form-window").classList.add("hidden");
+            //             document.querySelector(".form-overlay").classList.add("hidden");
+            //         };
+            //     }
+            // });
+
+            document.querySelector("#form-checkbox").addEventListener("click", function () {
+                if (document.querySelector("#form-checkbox").checked == true) {
+                    document.querySelector(".form-button").classList.remove("disabled");
+                } else {
+                    document.querySelector(".form-button").classList.add("disabled");
+                }
+            });
+
+            document.querySelector(".form-button").addEventListener("click", function () {
+                if (
+                    document.querySelector("#form-text-email").size != 0 &&
+                    document.querySelector("#form-text-name").size != 0 &&
+                    document.querySelector("#form-text-area").size != 0 &&
+                    document.querySelector("#form-checkbox").checked == true
+                ) {
+                    document.querySelector("#form-window").classList.add("hidden");
+                    document.querySelector(".form-overlay").classList.add("hidden");
+                } else {
+                    alert("Lengkapi isian terlebih dahulu!")
+                }
+            }
+            );
+        </script>
+        
+        <h1>Education</h1>
+
+        .
+
+        <div class="process-wrapper">
+            <div id="progress-bar-container">
+                <ul>
+                    <li class="step step01 active">
+                        <div class="step-inner">PAUD MDC</div>
+                    </li>
+                    <li class="step step02">
+                        <div class="step-inner">SD SW GKPS 1</div>
+                    </li>
+                    <li class="step step03">
+                        <div class="step-inner">SMP RK Bintang Timur</div>
+                    </li>
+                    <li class="step step04">
+                        <div class="step-inner">SMA RK Budi Mulia</div>
+                    </li>
+                    <li class="step step05">
+                        <div class="step-inner">Institut Teknologi Del</div>
+                    </li>
+                </ul>
+        
+                <div id="line">
+                    <div id="line-progress"></div>
+                </div>
+            </div>
+        
+            <div id="progress-content-section">
+                <div class="section-content discovery active">
+                    <h2>HOME SECTION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac,
+                        tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus
+                        lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id
+                        fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at
+                        felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+                </div>
+        
+                <div class="section-content strategy">
+                    <h2>GALLERY SECTION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac,
+                        tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus
+                        lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id
+                        fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at
+                        felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+                </div>
+        
+                <div class="section-content creative">
+                    <h2>Creative CREATIONS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac,
+                        tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus
+                        lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id
+                        fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at
+                        felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+                </div>
+        
+                <div class="section-content production">
+                    <h2>TESTIMONIALS NOW</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac,
+                        tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus
+                        lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id
+                        fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at
+                        felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+                </div>
+        
+                <div class="section-content analysis">
+                    <h2>OUR LOCATIONS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac,
+                        tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus
+                        lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id
+                        fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at
+                        felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script>
+
+            $(".step").click(function () {
+                $(this).addClass("active").prevAll().addClass("active");
+                $(this).nextAll().removeClass("active");
+            });
+
+            $(".step01").click(function () {
+                $("#line-progress").css("width", "3%");
+                $(".discovery").addClass("active").siblings().removeClass("active");
+            });
+
+            $(".step02").click(function () {
+                $("#line-progress").css("width", "25%");
+                $(".strategy").addClass("active").siblings().removeClass("active");
+            });
+
+            $(".step03").click(function () {
+                $("#line-progress").css("width", "50%");
+                $(".creative").addClass("active").siblings().removeClass("active");
+            });
+
+            $(".step04").click(function () {
+                $("#line-progress").css("width", "75%");
+                $(".production").addClass("active").siblings().removeClass("active");
+            });
+
+            $(".step05").click(function () {
+                $("#line-progress").css("width", "100%");
+                $(".analysis").addClass("active").siblings().removeClass("active");
+            });
+
+
+        </script>
+
+        <!-- <h2>Institut Teknologi Del</h2>
+            <label><em>(Del Institute of Technology)</em></label><br>
+            <label><strong>[Aug 2021 - Expected 2025]</strong></label>
+
+            <article>
+                <p>
+                    Major       : Informatics Bachelor Degree<br>
+                    Current GPA : 9897.00/4.00 (78 credits)<br>
+                    Courses : 
+                    Basic Programming, Object Oriented Programming, Database, Data Structure and Algorithm, Operating System, Computer Networks, 
+                    Web Based Application Development, Artificial Intelligence, Software Design and Analysis, Software Quality Assurance and Testing
+                </p>
+            </article>
+
+        <h2>SMA RK Budi Mulia</h2>
+            <label><em>(Budi Mulia State Senior High School)</em></label><br>
+            <label><strong>[Jul 2018 - Mar 2021]</strong></label>
+        <hr> -->
+
+        <!-- <h2>SMP RK Bintang Timur</h2>
+            <label><em>(Bintang Timur State Junior High School)</em></label><br>
+            <label><strong>[Jul 2015 - Apr 2018]</strong></label>
+        <hr> -->
+
+        <!-- FOOTER -->
+        <footer id="section-footer">
+            <div class="footer-row">
+        
+                <h2 id="footer-h2">Contact me</h2>
+                <div class="social-container">
+                    <ul>
+                        <li><a href="archicosemb@gmail.com"><i class='bx bxs-envelope bx-sm'></i></a></li>
+                        <li><a href="https://linkedin.com/in/archico"><i class='bx bxl-linkedin-square bx-sm'></i></a></li>
+                        <li><a href="https://github.com/archicos"><i class='bx bxl-github bx-sm'></i></a></li>
+                        <li><a href="https://linktr.ee/archico"><i class='bx bx-link bx-sm'></i></a></li>
+                        <li><a href="https://linktr.ee/archico"><i class='bx bxl-behance bx-sm'></i></a></li>
+                        <li><a href="https://instagram.com/archicosembiring"><i class='bx bxl-instagram-alt bx-sm'></i></a></li>
+                        <li><a href="https://youtube.com"><i class='bx bxl-youtube bx-sm'></i></a></li>
+                    </ul>
+                </div>
+        
+                <div class="social-cc">
+                    <p><strong>Copyright &copy;2023 oleh Archico</strong> - All Rights Reserved.</p>
+                </div>
+        
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./home.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <title>Archico</title>
+    </head>
+
+    <body>
+
+        <!-- NAVIGATION BAR -->
+        <nav>
+        
+            <a href="index.html" class="logo"><span>Archico</span><a>
+                    <ul class="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="education.html">Education</a></li>
+                    </ul>
+        
+                    <div class="nav-main">
+                        <!-- <a href="#" class="user">Sign In</a> -->
+                        <!-- <a href="#section-footer" class="user">Contact</a> -->
+                        <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
+                        <i class='bx bxs-message-edit bx-sm feedback-button' id="feedback-button"></i>
+                    </div>
+        </nav>
+        
+        <!-- FEEDBACK FORM -->
+        <section class="section-form">
+            <div class="form-overlay hidden"></div>
+        
+            <div class="form-window hidden" id="form-window">
+        
+                <div class="form-header">
+                    <h2 id="form-h2">Feedback</h2>
+                    <div class="form-close-button">&times;</div>
+                </div>
+                <div class="form-body">
+                    <div class="form-element">
+                        <label for="form-email">Email</label>
+                        <input type="email" id="form-text-email" placeholder="Enter email">
+                    </div>
+                    <div class="form-element">
+                        <label for="form-text-name">Name</label>
+                        <input type="text" id="form-text-name" placeholder="Enter name">
+                    </div>
+                    <div class="form-element">
+                        <label for="form-text-area">Feedback</label>
+                        <textarea name="" id="form-text-area" cols="30" rows="10" placeholder="Enter feedback"></textarea>
+                    </div>
+                    <div class="form-element-row">
+                        <input type="checkbox" id="form-checkbox">
+                        <label for="form-checkbox">My Data is Valid</label>
+                    </div>
+                    <div class="form-element" id="button-container">
+                        <button class="form-button disabled">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            document.querySelector("#feedback-button").addEventListener("click", function () {
+                document.querySelector("#form-window").classList.remove("hidden");
+                document.querySelector(".form-overlay").classList.remove("hidden");
+                // document.querySelector("body").style.overflow = "hidden";
+            });
+
+            document.querySelector(".form-close-button").addEventListener("click", function () {
+                document.querySelector("#form-window").classList.add("hidden");
+                document.querySelector(".form-overlay").classList.add("hidden");
+                // document.querySelector("body").style.overflow = "scroll";
+            });
+
+            document.querySelector(".form-overlay").addEventListener("click", function () {
+                document.querySelector("#form-window").classList.add("hidden");
+                document.querySelector(".form-overlay").classList.add("hidden");
+            });
+
+            // document.addEventListener("keydown", function (e) {
+            //     console.log(e.key);
+
+            //     if (e.key === "Escape" && !document.querySelector("#form-window").classList.contains("hidden")) {
+            //         function () {
+            //             document.querySelector("#form-window").classList.add("hidden");
+            //             document.querySelector(".form-overlay").classList.add("hidden");
+            //         };
+            //     }
+            // });
+
+            document.querySelector("#form-checkbox").addEventListener("click", function () {
+                if (document.querySelector("#form-checkbox").checked == true) {
+                    document.querySelector(".form-button").classList.remove("disabled");
+                } else {
+                    document.querySelector(".form-button").classList.add("disabled");
+                }
+            });
+
+            document.querySelector(".form-button").addEventListener("click", function () {
+                if (
+                    document.querySelector("#form-text-email").size != 0 &&
+                    document.querySelector("#form-text-name").size != 0 &&
+                    document.querySelector("#form-text-area").size != 0 &&
+                    document.querySelector("#form-checkbox").checked == true
+                ) {
+                    document.querySelector("#form-window").classList.add("hidden");
+                    document.querySelector(".form-overlay").classList.add("hidden");
+                } else {
+                    alert("Lengkapi isian terlebih dahulu!")
+                }
+            }
+            );
+        </script>
+
+        <!-- PROJECT -->
+        <section class="section-project">
+            <h2>Project</h2>
+        
+            <div class="home-project-box-container">
+                <div class="home-project-box">
+                    <h3>Project 1</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 2</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 3</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 1</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 2</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 3</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 1</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 2</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 3</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 1</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 2</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 3</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 1</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 2</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+                <div class="home-project-box">
+                    <h3>Project 3</h3>
+                    <img src="./assets/portfolio/cover-depagsos.jpg">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima
+                        aut
+                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
+                    <a class="home-section-hyperlink" href="about.html">See more...</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- <h1>Project</h1> -->
+
+        <!-- <h2>Website</h2>
+
+        <h2>Application</h2>
+
+        <h2>Movies</h2>
+            <img width="32%" src="./assets/portfolio/my-home-my-dorm.jpg">
+            <img width="32%" src="./assets/portfolio/pensi-boemi.jpg">
+            <img width="32%" src="./assets/portfolio/cover-depagsos.jpg">
+
+        <h2>Videography</h2> -->
+
+        <!-- FOOTER -->
+        <footer id="section-footer">
+            <div class="footer-row">
+        
+                <h2 id="footer-h2">Contact me</h2>
+                <div class="social-container">
+                    <ul>
+                        <li><a href="archicosemb@gmail.com"><i class='bx bxs-envelope bx-sm'></i></a></li>
+                        <li><a href="https://linkedin.com/in/archico"><i class='bx bxl-linkedin-square bx-sm'></i></a></li>
+                        <li><a href="https://github.com/archicos"><i class='bx bxl-github bx-sm'></i></a></li>
+                        <li><a href="https://linktr.ee/archico"><i class='bx bx-link bx-sm'></i></a></li>
+                        <li><a href="https://linktr.ee/archico"><i class='bx bxl-behance bx-sm'></i></a></li>
+                        <li><a href="https://instagram.com/archicosembiring"><i class='bx bxl-instagram-alt bx-sm'></i></a></li>
+                        <li><a href="https://youtube.com"><i class='bx bxl-youtube bx-sm'></i></a></li>
+                    </ul>
+                </div>
+        
+                <div class="social-cc">
+                    <p><strong>Copyright &copy;2023 oleh Archico</strong> - All Rights Reserved.</p>
+                </div>
+        
+            </div>
+        </footer>
+
+    </body>
+</html>

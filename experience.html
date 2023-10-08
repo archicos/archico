@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./experience.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <title>Archico</title>
+    </head>
+
+    <body>
+
+        <!-- NAVIGATION BAR -->
+        <nav>
+        
+            <a href="index.html" class="logo"><span>Archico</span><a>
+                    <ul class="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="experience.html" class="active">Experience</a></li>
+                        <li><a href="education.html">Education</a></li>
+                    </ul>
+        
+                    <div class="nav-main">
+                        <!-- <a href="#" class="user">Sign In</a> -->
+                        <!-- <a href="#section-footer" class="user">Contact</a> -->
+                        <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
+                        <i class='bx bxs-message-edit bx-sm feedback-button' id="feedback-button"></i>
+                    </div>
+        </nav>
+
+        <!-- FEEDBACK FORM -->
+        <section class="section-form">
+            <div class="form-overlay hidden"></div>
+        
+            <div class="form-window hidden" id="form-window">
+        
+                <div class="form-header">
+                    <h2 id="form-h2">Feedback</h2>
+                    <div class="form-close-button">&times;</div>
+                </div>
+                <div class="form-body">
+                    <div class="form-element">
+                        <label for="form-email">Email</label>
+                        <input type="email" id="form-text-email" placeholder="Enter email">
+                    </div>
+                    <div class="form-element">
+                        <label for="form-text-name">Name</label>
+                        <input type="text" id="form-text-name" placeholder="Enter name">
+                    </div>
+                    <div class="form-element">
+                        <label for="form-text-area">Feedback</label>
+                        <textarea name="" id="form-text-area" cols="30" rows="10" placeholder="Enter feedback"></textarea>
+                    </div>
+                    <div class="form-element-row">
+                        <input type="checkbox" id="form-checkbox">
+                        <label for="form-checkbox">My Data is Valid</label>
+                    </div>
+                    <div class="form-element" id="button-container">
+                        <button class="form-button disabled">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            document.querySelector("#feedback-button").addEventListener("click", function () {
+                document.querySelector("#form-window").classList.remove("hidden");
+                document.querySelector(".form-overlay").classList.remove("hidden");
+                // document.querySelector("body").style.overflow = "hidden";
+            });
+
+            document.querySelector(".form-close-button").addEventListener("click", function () {
+                document.querySelector("#form-window").classList.add("hidden");
+                document.querySelector(".form-overlay").classList.add("hidden");
+                // document.querySelector("body").style.overflow = "scroll";
+            });
+
+            document.querySelector(".form-overlay").addEventListener("click", function () {
+                document.querySelector("#form-window").classList.add("hidden");
+                document.querySelector(".form-overlay").classList.add("hidden");
+            });
+
+            // document.addEventListener("keydown", function (e) {
+            //     console.log(e.key);
+
+            //     if (e.key === "Escape" && !document.querySelector("#form-window").classList.contains("hidden")) {
+            //         function () {
+            //             document.querySelector("#form-window").classList.add("hidden");
+            //             document.querySelector(".form-overlay").classList.add("hidden");
+            //         };
+            //     }
+            // });
+
+            document.querySelector("#form-checkbox").addEventListener("click", function () {
+                if (document.querySelector("#form-checkbox").checked == true) {
+                    document.querySelector(".form-button").classList.remove("disabled");
+                } else {
+                    document.querySelector(".form-button").classList.add("disabled");
+                }
+            });
+
+            document.querySelector(".form-button").addEventListener("click", function () {
+                if (
+                    document.querySelector("#form-text-email").size != 0 &&
+                    document.querySelector("#form-text-name").size != 0 &&
+                    document.querySelector("#form-text-area").size != 0 &&
+                    document.querySelector("#form-checkbox").checked == true
+                ) {
+                    document.querySelector("#form-window").classList.add("hidden");
+                    document.querySelector(".form-overlay").classList.add("hidden");
+                } else {
+                    alert("Lengkapi isian terlebih dahulu!")
+                }
+            }
+            );
+        </script>
+        
+        <h1>Experience</h1>
+
+        <!-- SECTION EXPERIENCE -->
+        <section class="section-experience">
+
+            <div class="experience-container">
+                <main class="row">
+    
+                    <!-- First Category -->
+                    <section class="col">
+    
+                        <header class="title">
+                            <h2>Experiences</h2>
+    
+                        </header>
+    
+                        <div class="contents">
+    
+                            <div class="box">
+                                <h4>Jul 2023 - Present</h4>
+                                <h3>ICStar Hackathon 2023</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Recusandae, reprehenderit fuga tempore libero aliquam 
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis 
+                                    dolores hic consequatur ut. Quam similique 
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                            <div class="box">
+                                <h4>Jun 2023 - Jul 2023</h4>
+                                <h3>Recommendation for BGI Internship Program 2023</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Recusandae, reprehenderit fuga tempore libero aliquam 
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis 
+                                    dolores hic consequatur ut. Quam similique 
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                            <div class="box">
+                                <h4>2018 - 2022</h4>
+                                <h3>High School Degree</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Recusandae, reprehenderit fuga tempore libero aliquam 
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis 
+                                    dolores hic consequatur ut. Quam similique 
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                            <div class="box">
+                                <h4>Jul 2023 - Present</h4>
+                                <h3>ICStar Hackathon 2023</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Recusandae, reprehenderit fuga tempore libero aliquam 
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis 
+                                    dolores hic consequatur ut. Quam similique 
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                            <div class="box">
+                                <h4>Jun 2023 - Jul 2023</h4>
+                                <h3>Recommendation for BGI Internship Program 2023</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Recusandae, reprehenderit fuga tempore libero aliquam 
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis 
+                                    dolores hic consequatur ut. Quam similique 
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                            <div class="box">
+                                <h4>2018 - 2022</h4>
+                                <h3>High School Degree</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Recusandae, reprehenderit fuga tempore libero aliquam 
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis 
+                                    dolores hic consequatur ut. Quam similique 
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <!-- Second Category -->
+                    <section class="col">
+                    
+                        <header class="title">
+                            <h2>Awards</h2>
+                    
+                        </header>
+                    
+                        <div class="contents">
+                    
+                            <div class="box">
+                                <h4>2018 - 2022</h4>
+                                <h3>Most Outstanding Students of Del</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Recusandae, reprehenderit fuga tempore libero aliquam
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis
+                                    dolores hic consequatur ut. Quam similique
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                            <div class="box">
+                                <h4>2018 - 2022</h4>
+                                <h3>High School Degree</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Recusandae, reprehenderit fuga tempore libero aliquam
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis
+                                    dolores hic consequatur ut. Quam similique
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                            <div class="box">
+                                <h4>2018 - 2022</h4>
+                                <h3>High School Degree</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Recusandae, reprehenderit fuga tempore libero aliquam
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis
+                                    dolores hic consequatur ut. Quam similique
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <!-- Third Category -->
+                    <section class="col">
+                    
+                        <header class="title">
+                            <h2>Organization</h2>
+                    
+                        </header>
+                    
+                        <div class="contents">
+                    
+                            <div class="box">
+                                <h4>2018 - 2022</h4>
+                                <h3>Head of Department of Communication and Information</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Recusandae, reprehenderit fuga tempore libero aliquam
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis
+                                    dolores hic consequatur ut. Quam similique
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                            <div class="box">
+                                <h4>2018 - 2022</h4>
+                                <h3>Student Executive Board, Institut Teknologi Del</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Recusandae, reprehenderit fuga tempore libero aliquam
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis
+                                    dolores hic consequatur ut. Quam similique
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                            <div class="box">
+                                <h4>2018 - 2022</h4>
+                                <h3>High School Degree</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Recusandae, reprehenderit fuga tempore libero aliquam
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis
+                                    dolores hic consequatur ut. Quam similique
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <!-- Forth Category -->
+                    <section class="col">
+                    
+                        <header class="title">
+                            <h2>Certificate</h2>
+                    
+                        </header>
+                    
+                        <div class="contents">
+                    
+                            <div class="box">
+                                <h4>2018 - 2022</h4>
+                                <h3>High School Degree</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Recusandae, reprehenderit fuga tempore libero aliquam
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis
+                                    dolores hic consequatur ut. Quam similique
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                            <div class="box">
+                                <h4>2018 - 2022</h4>
+                                <h3>High School Degree</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Recusandae, reprehenderit fuga tempore libero aliquam
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis
+                                    dolores hic consequatur ut. Quam similique
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                            <div class="box">
+                                <h4>2018 - 2022</h4>
+                                <h3>High School Degree</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Recusandae, reprehenderit fuga tempore libero aliquam
+                                    explicabo ipsa soluta nesciunt mollitia ea facilis
+                                    dolores hic consequatur ut. Quam similique
+                                    iure laboriosam adipisci.</p>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="section-footer">
+            <div class="footer-row">
+        
+                <h2 id="footer-h2">Contact me</h2>
+                <div class="social-container">
+                    <ul>
+                        <li><a href="archicosemb@gmail.com"><i class='bx bxs-envelope bx-sm'></i></a></li>
+                        <li><a href="https://linkedin.com/in/archico"><i class='bx bxl-linkedin-square bx-sm'></i></a></li>
+                        <li><a href="https://github.com/archicos"><i class='bx bxl-github bx-sm'></i></a></li>
+                        <li><a href="https://linktr.ee/archico"><i class='bx bx-link bx-sm'></i></a></li>
+                        <li><a href="https://linktr.ee/archico"><i class='bx bxl-behance bx-sm'></i></a></li>
+                        <li><a href="https://instagram.com/archicosembiring"><i class='bx bxl-instagram-alt bx-sm'></i></a></li>
+                        <li><a href="https://youtube.com"><i class='bx bxl-youtube bx-sm'></i></a></li>
+                    </ul>
+                </div>
+        
+                <div class="social-cc">
+                    <p><strong>Copyright &copy;2023 oleh Archico</strong> - All Rights Reserved.</p>
+                </div>
+        
+            </div>
+        </footer>
+
+    </body>
+</html>
