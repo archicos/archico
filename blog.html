@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Archico</title>
+        <link rel="icon" type="image/x-icon" href="./img/header/web-logo.ico">
     </head>
 
     <body>
@@ -139,58 +140,63 @@
         
             <div class="home-blog-box-container">
                 <div class="home-blog-box">
-                    <img src="./assets/technology.jpg">
+                    <img src="./img/blog/outstanding.jpg">
                     <div class="home-blog-box-desc">
-                        <h3>My Journal 01 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima alias ab reiciendis, vitae eum!
+                        <h3>Most Outstanding? Nice try dude...</h3>
+                        <p>
+                            A story of mine while dreaming about become "Sisean na Pantas".
                         </p>
-                        <p><button class="show-modal">See more...</button></p>
+                        <p><button class="show-modal" id="show-modal-1">See more...</button></p>
                         
                     </div>
                 </div>
                 <div class="home-blog-box">
-                    <img src="./assets/technology.jpg">
+                    <img src="./img/blog/bro.jpg">
                     <div class="home-blog-box-desc">
-                        <h3>My Journal 01 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima alias ab reiciendis, vitae eum!
+                        <h3>Happy Birthday, Big Bro!</h3>
+                        <p>
+                            Today is Nico birhtday, and this time we celebrated it together, again.
                         </p>
-                        <p><button class="show-modal">See more...</button></p>
+                        <p><button class="show-modal" id="show-modal-2">See more...</button></p>
                     </div>
                 </div>
                 <div class="home-blog-box">
-                    <img src="./assets/technology.jpg">
+                    <img src="./img/blog/utbk.jpg">
                     <div class="home-blog-box-desc">
-                        <h3>My Journal 01 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima alias ab reiciendis, vitae eum!
+                        <h3>A self-reflection session </h3>
+                        <p>
+                            Today, 14 June 2023, exactly two years after the announcement of SBMPTN 2021...
                         </p>
-                        <p><button class="show-modal">See more...</button></p>
+                        <p><button class="show-modal" id="show-modal-3">See more...</button></p>
                     </div>
                 </div>
                 <div class="home-blog-box">
-                    <img src="./assets/technology.jpg">
+                    <img src="./img/blog/bgi.png">
                     <div class="home-blog-box-desc">
-                        <h3>My Journal 01 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima alias ab reiciendis, vitae eum!
+                        <h3>Don't teach fish how to climb a tree...</h3>
+                        <p>
+                            This is a story of my experience in interviewing for BGI Internship Program.
                         </p>
-                        <p><button class="show-modal">See more...</button></p>
+                        <p><button class="show-modal" id="show-modal-4">See more...</button></p>
                     </div>
                 </div>
                 <div class="home-blog-box">
-                    <img src="./assets/technology.jpg">
+                    <img src="./img/blog/typing.jpg">
                     <div class="home-blog-box-desc">
-                        <h3>My Journal 01 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima alias ab reiciendis, vitae eum!
+                        <h3>About today...</h3>
+                        <p>
+                            Just want to type something...
                         </p>
-                        <p><button class="show-modal">See more...</button></p>
+                        <p><button class="show-modal" id="show-modal-5">See more...</button></p>
                     </div>
                 </div>
                 <div class="home-blog-box">
-                    <img src="./assets/technology.jpg">
+                    <img src="./img/blog/coil2.png">
                     <div class="home-blog-box-desc">
-                        <h3>My Journal 01 </h3>
+                        <h3>COIL Family...</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima alias ab reiciendis, vitae eum!
                         </p>
-                        <p><button class="show-modal">See more...</button></p>
+                        <p><button class="show-modal" id="show-modal-6">See more...</button></p>
                     </div>
                 </div>
             </div>
@@ -198,25 +204,207 @@
 
         <!-- WINDOW -->
         <section class="section-window">
-            <div class="modal hidden">
-                <button class="close-modal">&times;</button>
-                <div class="modal-image">
 
+            <!-- Pop Up Window for Technology Project -->
+            <div class="modal hidden" id="window-blog-1">
+                <button class="close-modal" id="close-modal-1">&times;</button>
+                <div class="modal-image">
+            
                 </div>
                 <div class="modal-body">
-                    <h1>Journal Title</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.
-                    </p>
+                    <div class="modal-body-img">
+                        <img src="./img/blog/outstanding.jpg" alt="">
+                    </div>
+                    <div class="modal-body-body">
+                        <h3>Most Outstanding? Nice Try, dude..</h3>
+                        <p>
+                            Most Outstanding Student of IT Del. Yes... that title has always been ringing in my head for a long time. It's something
+                            I've dreamed of for a long time, because it started with a senior high school figure who was suddenly reported to have
+                            won the title of Most Outstanding Student of ITS Surabaya. Participating in various activities, being active in various organizations, trying everything that is sometimes even very far from the limits of
+                            one's abilities.
+                            <br><br>
+                            Until that day arrived, it turned out that my name appeared as one of the six selected candidates. I felt very happy to
+                            be able to touch that point, after previously being pessimistic and having given up hope. So in that one night, I
+                            reached out to everyone I could reach to be able to give me the voting rights they had. However, it turned out that
+                            these efforts were insignificant compared to other candidates who were much better known than me, who was only known to
+                            two or three people around me.
+        
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div class="modal hidden" id="window-blog-2">
+                <button class="close-modal" id="close-modal-2">&times;</button>
+                <div class="modal-image">
+            
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="./img/blog/bro.jpg" alt="">
+                    </div>
+                    <div class="modal-body-body">
+                        <h3>Happy Birthday, Big Bro!</h3>
+                        <p>
+                            Happy Birthday, Big Bro!
+                            After you talked a lot about what it was like to be the first child, how hard it was for the two of you to support each
+                            other with such a heavy family burden, as the first child, that's how I salute you. So I can feel what you feel, because
+                            I can also relate to myself too hahaha. There's a close friend of mine, he's also the first child, hahaha, he's
+                            stubborn, like the older ones, but he's also tough like the first child, only the difference is that they're a little
+                            more affluent than us, so it's not like you're the one who has to take responsibility for your parents and younger
+                            siblings, he's just enough. He can only bear himself, but even then he is still often down, maybe he hasn't been used to
+                            it since he was little, in his family, things are smooth and well-off, unlike those of us who have been bitter since we
+                            were small, we have felt our shortcomings... but yes, that's how's life works....
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal hidden" id="window-blog-3">
+                <button class="close-modal" id="close-modal-3">&times;</button>
+                <div class="modal-image">
+            
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="./img/blog/utbk.jpg" alt="">
+                    </div>
+                    <div class="modal-body-body">
+                        <h3>A self-reflection session</h3>
+                        <p>
+                            Today is exactly 2 years since the announcement for Chic :) I can't believe it, it's been 2 years....does it feel like
+                            it? Hahaha. actually it feels like it was 10 years ago, but it turns out it's still 2 years :) how about it? is it
+                            comfortable? is there anything you still regret? So far, it's just comfortable, okay? :) But I don't know whether if you
+                            go to ITB it will be even more comfortable... but yes, it could be that it's going to be damaged for us :) Bandung is as
+                            hard as it turns out: "A friend of Juan's died yesterday:") Yes, I'm back again, I think it's true what the woman said at
+                            the new canteen :) about being grateful for what you've experienced...
+                            I'll just talk about that, I feel like we've started to find what we've been looking for all this time "what do you get
+                            from del?", well, I don't know if the answer is that woman :) but whatever it is I hope we're grateful, chic :) you're
+                            the one who taught us Let's be grateful :) How happy does it feel to have him in our lives :) I hope we can not
+                            disappoint him, at least it's limited to making him comfortable with us :) If we can, make him happy forever :)
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal hidden" id="window-blog-4">
+                <button class="close-modal" id="close-modal-4">&times;</button>
+                <div class="modal-image">
+            
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="./img/blog/bgi.png" alt="">
+                    </div>
+                    <div class="modal-body-body">
+                        <h3>Don't teach fish how to climb a tree...</h3>
+                        <p>
+                            I'm relieved that I'm finally done with all of this, phew, what a relief, I haven't felt calm this week, I've been
+                            suffocating, I've been scared, I've had cold sweats, I've neglected my homework, abandoned trips, abandoned projects,
+                            the Department of Communication and Communication has not been taken care of, I'm sorry even my beloved became a brntm
+                            because of this😠
+                            
+                            It's a lesson, cool, next time don't just list something, prepare everything, overall you won't lose, that's adding
+                            experience, even though we were already checkmated until we were speechless HAHAHA, got mental brooo:""" What mom said
+                            is true, We are still lacking in communication, speaking and English, it's true what you said, we have a lot of things
+                            in our heads, but it's hard to convey them through words, and it's also a matter of being nervous:""
+                            
+                            yeah, that's what happens if you're an introvert but trying to break ma heart break ma hafff, just kid:" but trying to
+                            break ur comfort zone to be good at communicating in public :) I hope we keep getting used to it, don't miss it please
+                            :)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal hidden" id="window-blog-5">
+                <button class="close-modal" id="close-modal-5">&times;</button>
+                <div class="modal-image">
+            
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="./img/blog/typing.jpg" alt="">
+                    </div>
+                    <div class="modal-body-body">
+                        <h3>About today...</h3>
+                        <p>
+                            Want to type something...
+                            
+                            I'm really happy at the same time, I'm just running smoothly now, so I'm feeling lazy about typing, wow, I'll wait if I
+                            want to, but now I'm really lazy.... There's a few things to tell you about, but only a few, I'm still very happy today.
+                            This...
+                            So, overall.....
+                            
+                            *turns out the twist is I fell asleep while typing
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal hidden" id="window-blog-6">
+                <button class="close-modal" id="close-modal-6">&times;</button>
+                <div class="modal-image">
+            
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-img">
+                        <img src="./img/blog/coil.png" alt="">                        
+                    </div>
+                    <div class="modal-body-body">
+                        <h3>The small family called COIL Famss...</h3>
+                        <p>
+                            Today was the first time I met and got to know my beautiful family, COIL'15 and COIL'17...
+                            It's like when we met earlier, it turned out they were fun, cool, funny, and tough too... We all loved it... So I was
+                            thinking, why do I have to change this coil to my little brother... But I don't know. I'm sure I'm right or wrong. BTW,
+                            my older brother was chosen to be a BPH coil 🤣🤣 Because he said that of all of us, the only older brother is the one
+                            who is stubborn :v Only the older brother has the courage to chat with everyone ha ha ha ha ha ha ha I hope I'll get
+                            married later, I don't know who, bro :v We're all invited, at least take a photo from top to bottom ha ha ha ha, I don't
+                            know what else to write, thank you to the big family of Coil Famss, Bg Pedro, Bg Doni, Sis Sharon, Sis Marzan, Sis ely,
+                            bro roel (a convert he said), my sister sis putriii, and my sister cia.... —Coil'21
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
             <div class="overlay hidden"></div>
+            
+            <!-- Script for Sliding Image -->
+            <script>
+                const slide = document.querySelectorAll(".slide")
+                var counter = 0;
+
+                // console.log(slides)
+                slide.forEach(
+                    (slide, index) => {
+                        slide.style.left = `$(index * 100)%`;
+                    }
+                )
+
+                const goPrev = () => {
+                    if (counter == 0) {
+                        counter = 4;
+                        slideImage();
+                    } else {
+                        counter--;
+                        slideImage();
+                    }
+                }
+
+                const goNext = () => {
+                    if (counter == 4) {
+                        counter = 0;
+                        slideImage();
+                    } else {
+                        counter++;
+                        slideImage();
+                    }
+                }
+
+                const slideImage = () => {
+                    slide.forEach(
+                        (slide) => {
+                            slide.style.transform = `translateX(-${counter * 100}%)`;
+                        }
+                    )
+                }
+            </script>
         </section>
 
         <!-- FOOTER -->

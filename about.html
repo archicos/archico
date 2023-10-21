@@ -8,7 +8,11 @@
         <link rel="stylesheet" href="./about.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!-- ICONS -->
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/screen.css' rel='stylesheet'>
         <title>Archico</title>
+        <link rel="icon" type="image/x-icon" href="./img/header/web-logo.ico">
     </head>
 
     <body>
@@ -120,7 +124,7 @@
             <h2 class="h2-about">Biography</h2>
             <div class="biography-row">
                 <div class="biography">
-                    <img class="biography-image" src="./assets/Profile Pict.jpg" alt="Archico Profile Picture">
+                    <img class="biography-image" src="./img/about/profile-pict.jpg" alt="Archico Profile Picture">
                 </div>
                 <div class="biography-body">
                     <h3 class="biography-h3">Archico Darius Simpar Sembiring</h3>
@@ -149,7 +153,21 @@
                             <p>+62 821 6711 4171</p>
                         </div>
                     </div>
-                    <button class="biography-button"><a href="">See Resume</a></button>
+                    <div class="biography-button-container">
+                        <button class="biography-button">
+                            <i class='bx bx-sm bxs-file-pdf' style="color:#fff"></i>
+                            <a href="./assets/about/archico-resume.pdf" download="./assets/about/archico-resume.pdf" target="_blank">
+                                See Resume
+                            </a>
+                        </button>
+                        <button class="biography-button">
+                            <i class='bx bx-sm bxl-linkedin-square' style="color:#fff"></i>
+                            <a href="./assets/about/archico-resume.pdf" download="./assets/about/archico-resume.pdf">
+                                Visit LinkedIn
+                            </a>
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -157,21 +175,72 @@
         <section class="section-interest">
             <h2 class="h2-about">Area of Interest</h2>
             <div class="interest-container">
-                <ul>
-                    <li>Web Development</li>
-                    <li>Game Development</li>
-                    <li>Artificial Intelligence</li>
-                    <li>UI/UX Design</li>
-                    <li>Graphic Design</li>
-                    <li>Photography</li>
-                    <li>Videography</li>
-                    <li>Cinematography</li>
-                </ul>
+                <div class="interest-box">
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/000000/imac.png" alt="imac"/>
+                    <p>Web Development</p>
+                </div>
+                <div class="interest-box">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/controller.png" alt="controller" />
+                    Game Development
+                </div>
+                <div class="interest-box">
+                    <img width="60" height="60"
+                        src="https://img.icons8.com/external-soft-fill-juicy-fish/60/external-artificial-big-data-soft-fill-soft-fill-juicy-fish.png"
+                        alt="external-artificial-big-data-soft-fill-soft-fill-juicy-fish" />
+                    Artifical Intelligence
+                </div>
+                <div class="interest-box">
+                    <img
+                        src="data:image/png;base64,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">
+                    UI/UX Design
+                </div>
+                <div class="interest-box">
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/modern-art.png" alt="modern-art" />
+                    Graphic Design
+                </div>
+                <div class="interest-box">
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/old-time-camera.png" alt="old-time-camera" />
+                    Photography
+                </div>
+                <div class="interest-box">
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/movie-projector.png" alt="movie-projector" />
+                    Videography
+                </div>
+                <div class="interest-box">
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/3d-glasses.png" alt="3d-glasses" />
+                    Cinematography
+                </div>
             </div>
         </section>
 
-        <section>
+        <!-- <li>Web Development</li>
+        <li>Game Development</li>
+        <li>Artificial Intelligence</li>
+        <li>UI/UX Design</li>
+        <li>Graphic Design</li>
+        <li>Photography</li>
+        <li>Videography</li>
+        <li>Cinematography</li> -->
+
+        <!-- SECTION -->
+        <!-- <section>
             <h2 class="h2-about">Skills</h2>
+
+            <div class="skills-container leadership">
+                <div class="circular-progress leadership">
+                    <span class="progress-value leadership">0%</span>
+                </div>
+
+                <span class="text leadership">Leadership</span>
+            </div>
+            
+            <div class="skills-container public-speaking">
+                <div class="circular-progress public-speaking">
+                    <span class="progress-value public-speaking">0%</span>
+                </div>
+
+                <span class="text public-speaking">Public Speaking</span>
+            </div>
 
             <div class="skills-container">
                 <div class="circular-progress">
@@ -180,6 +249,30 @@
 
                 <span class="text">HTML & CSS</span>
             </div>
+
+            <div class="skills-container">
+                <div class="circular-progress">
+                    <span class="progress-value">0%</span>
+                </div>
+
+                <span class="text">HTML & CSS</span>
+            </div>
+            
+            <div class="skills-container">
+                <div class="circular-progress">
+                    <span class="progress-value">0%</span>
+                </div>
+
+                <span class="text">HTML & CSS</span>
+            </div>
+
+            <div class="skills-container">
+                <div class="circular-progress">
+                    <span class="progress-value">0%</span>
+                </div>
+
+                <span class="text">HTML & CSS</span>
+            </div> -->
 
             <!-- <div class="skills-category">
                 <h3>Soft Skills</h3>
@@ -199,8 +292,9 @@
                     <li>English</li>
                 </ul>
             </div> -->
-        </section>
+        <!-- </section> -->
 
+        <!-- TOOLS -->
         <section class="section-tools">
             <h2>Tools</h2>
             
@@ -213,14 +307,14 @@
                         <div class="skill">
                             <div class="skill-name">C</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="70%" style="max-width: 70%"></div>
                             </div>
                         </div>
                         
                         <div class="skill">
                             <div class="skill-name">Java</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="80%" style="max-width: 80%"></div>
                             </div>
                         </div>
         
@@ -234,35 +328,35 @@
                         <div class="skill">
                             <div class="skill-name">CSS</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="88%" style="max-width: 88%"></div>
                             </div>
                         </div>
                         
                         <div class="skill">
                             <div class="skill-name">Javascript</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="80%" style="max-width: 80%"></div>
                             </div>
                         </div>
         
                         <div class="skill">
                             <div class="skill-name">PHP</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="25%" style="max-width: 25%"></div>
                             </div>
                         </div>
         
                         <div class="skill">
                             <div class="skill-name">MySQL</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="40%" style="max-width: 40%"></div>
                             </div>
                         </div>
         
                         <div class="skill">
                             <div class="skill-name">SQL</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="50%" style="max-width: 50%"></div>
                             </div>
                         </div>
         
@@ -277,56 +371,56 @@
                         <div class="skill">
                             <div class="skill-name">Adobe Photoshop</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="20%" style="max-width: 20%"></div>
+                                <div class="skill-per" per="95%" style="max-width: 75%"></div>
                             </div>
                         </div>
                         
                         <div class="skill">
                             <div class="skill-name">Adobe Premiere Pro</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="97%" style="max-width: 97%"></div>
                             </div>
                         </div>
         
                         <div class="skill">
                             <div class="skill-name">Adobe Illustrator</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="82%" style="max-width: 82%"></div>
                             </div>
                         </div>
         
                         <div class="skill">
                             <div class="skill-name">Adobe After Effect</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="75%" style="max-width: 75%"></div>
                             </div>
                         </div>
                         
                         <div class="skill">
                             <div class="skill-name">Davinci Resolve</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="85%" style="max-width: 85%"></div>
                             </div>
                         </div>
         
                         <div class="skill">
                             <div class="skill-name">Wondershare Filmora</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="93%" style="max-width: 93%"></div>
                             </div>
                         </div>
         
                         <div class="skill">
                             <div class="skill-name">Figma</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="89%" style="max-width: 89%"></div>
                             </div>
                         </div>
         
                         <div class="skill">
                             <div class="skill-name">Sketch Up</div>
                             <div class="skill-bar">
-                                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                                <div class="skill-per" per="77%" style="max-width: 77%"></div>
                             </div>
                         </div>
         
@@ -335,23 +429,212 @@
                 </div>
             </div>
 
-            
+        </section>
 
+        <!-- SECTION SOFTSKILLS -->
+
+        <section class="section-softskill">
+            
+            <h2>Softskill</h2>
+
+            <div class="skills">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="inner-text">
+                                <p>Problem<br>Solving</p>
+                            </div>
+                            <div class="number">
+                                0%
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="rgb(0, 90, 90)" />
+                                <stop offset="100%" stop-color="rgb(0, 120, 120)" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="progress" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="inner-text">
+                                <p>Leadership</p>
+                            </div>
+                            <div class="number">
+                                0%
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="progress" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="inner-text">
+                                <p>Public<br>Speaking</p>
+                            </div>
+                            <div class="number">
+                                0%
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="progress" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="inner-text">
+                                <p>Communication</p>
+                            </div>
+                            <div class="number">
+                                0%
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="progress" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="inner-text">
+                                <p>Critical<br>Thinking</p>
+                            </div>
+                            <div class="number">
+                                0%
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="progress" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="inner-text">
+                                <p>Bahasa Indonesia</p>
+                            </div>
+                            <div class="number">
+                                0%
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="progress" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="inner-text">
+                                <p>English</p>
+                            </div>
+                            <div class="number">
+                                0%
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="progress" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <!-- Add 6 more .skill elements for a total of 7 circular bars -->
+            </div>
+
+            <!-- Circular Bar Script -->
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                        // Get references to all progress circles and numbers
+                        const progressBars = document.querySelectorAll('.progress');
+                        const numbers = document.querySelectorAll('.number');
+
+                        // Initialize counters for each progress bar
+                        const counters = [0, 0, 0, 0, 0, 0, 0];
+                        const targetPercentages = [88, 84, 80, 82, 90, 95, 76];
+
+                        // Function to update the progress and number display for each bar
+                        const updateProgress = (index) => {
+                            if (counters[index] <= targetPercentages[index]) {
+                                numbers[index].innerHTML = `${counters[index]}%`;
+                                const offset = 450 - (450 * counters[index]) / 100;
+                                progressBars[index].style.strokeDashoffset = offset;
+                                counters[index]++;
+                            }
+                        };
+
+                        // Update the progress for each bar every 30 milliseconds
+                        const progressAnimations = [];
+
+                        for (let i = 0; i < progressBars.length; i++) {
+                            progressAnimations[i] = setInterval(() => {
+                                updateProgress(i);
+                            }, 30);
+                        }
+                    });
+            </script>
 
         </section>
 
-        <section>
+
+        <section class="section-gallery">
             <h2>Gallery</h2>
-                <img width="19%" src="./assets/gallery/rooftop-gd9.jpeg">
-                <img width="19%" src="./assets/gallery/tukangan.jpg">
-                <img width="19%" src="./assets/gallery/almet.jpg">
-                <img width="19%" src="./assets/gallery/lomba-fotografi.jpg">
-                <img width="19%" src="./assets/gallery/open-theater.jpg">
-                <img width="19%" src="./assets/gallery/narapidana.jpg">
-                <img width="19%" src="./assets/gallery/profile-sipisopiso.jpg">
-                <img width="19%" src="./assets/gallery/jamet.JPG">
-                <img width="19%" src="./assets/gallery/sipinsur.jpg">
-                <img width="19%" src="./assets/gallery/baju-depkominfo.JPG">
+                <img width="19%" src="./img/about/gallery/almet.jpg">
+                <img width="19%" src="./img/about/gallery/jln-malio.jpg">
+                <img width="19%" src="./img/about/gallery/keluarga.jpeg">
+                <img width="19%" src="./img/about/gallery/lotte.jpg">
+                <img width="19%" src="./img/about/gallery/malioboro.jpg">
+                <img width="19%" src="./img/about/gallery/moniq.jpeg">
+                <img width="19%" src="./img/about/gallery/open-theater.jpg">
+                <img width="19%" src="./img/about/gallery/prambanan.jpg">
+                <img width="19%" src="./img/about/gallery/sipiso.jpg">
+                <img width="19%" src="./img/about/gallery/ugm.jpg">
         </section>
 
         <!-- FOOTER -->

@@ -8,11 +8,19 @@
         <link rel="stylesheet" href="./home.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link href="
+        https://cdn.jsdelivr.net/npm/swiper@10.3.1/modules/effect-fade.min.css
+        " rel="stylesheet">
+        <link rel="stylesheet" href="./package/swiper.css">
+        <link rel="stylesheet" href="./package/swiper.min.css">
+        
+        
 
         <!-- Icons -->
 
         <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
         <title>Archico</title>
+        <link rel="icon" type="image/x-icon" href="./img/header/web-logo.ico">
     </head>
 
     <body>
@@ -42,12 +50,35 @@
         <!-- <h1>Archico</h1><br> -->
 
         <!-- JUMBOTRON -->
-        
-
         <section class="section-jumbotron">
             <div class="jumbotron">
-                <img width="100%" src="../Multimedia/Jumbotron/Jumbotron.jpg" alt="archico">
+                <div class="content">
+                    <div class="split a"><div class="splitter-content"></div></div>
+                    <div class="split b"></div>
+                </div>
+                <div class="content-overlay">
+                    <div class="content-overlay-left">
+                        <h1>Archico</h1>
+                        <p>From <strong>Anamorphic</strong> to <strong>Motion Graphic</strong></p>
+                    </div>
+                    <div class="content-overlay-center">
+
+                    </div>
+                    <div class="content-overlay-right">
+
+                    </div>
+                    
+                </div>
             </div>
+
+            
+            <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
+            <script>
+                Split(['.a', '.b'], {
+                    gutterSize: 3,
+                    sizes: [20, 80]
+                });
+            </script>
             
         </section>
 
@@ -64,89 +95,34 @@
                 into my study of Informatics in the form of UI/UX Design for developing websites and applications. I'm also
                 on going to explore front-end and back-end developer, by leading and directing a few simple projects
             </p>
-            <!-- <button class="button-home-seemore">See more...</button> -->
-            <button class="button-home-seemore">See more</button>
+            <button class="button-home-seemore"><a href="./about.html" style="color:white">See more...</a></button>
         </section>
         
-        <!-- POPULAR -->
-        <!-- <section class="section-popular">
-            <h2>Popular</h2>
-
-            <div class="home-popular-box-container">
-                <div class="home-popular-box">
-                    <h3>Popular 1</h3>
-                    <img src="./assets/portfolio/project1.jpg">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima aut voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
-                    <button class="button-home-seemore">See more...</button>
-                </div>
-                <div class="home-popular-box">
-                    <h3>Popular 2</h3>
-                    <img src="./assets/portfolio/project1.jpg">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima aut voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
-                    <button class="button-home-seemore">See more...</button>
-                </div>
-                <div class="home-popular-box">
-                    <h3>Popular 3</h3>
-                    <img src="./assets/portfolio/project1.jpg">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima aut voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
-                    <button class="button-home-seemore">See more...</button>
-                </div>
-                <div class="home-popular-box">
-                    <h3>Popular 4</h3>
-                    <img src="./assets/portfolio/project1.jpg">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima aut voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
-                    <button class="button-home-seemore">See more...</button>
-                </div>
-                <div class="home-popular-box">
-                    <h3>Popular 5</h3>
-                    <img src="./assets/portfolio/project1.jpg">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima aut voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
-                    <button class="button-home-seemore">See more...</button>
-                </div>
-                <div class="home-popular-box">
-                    <h3>Popular 6</h3>
-                    <img src="./assets/portfolio/project1.jpg">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima aut voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
-                    <button class="button-home-seemore">See more...</button>
-                </div>
-            </div>
-        </section> -->
+    
 
         <!-- BLOG -->
-        <section class="section-container">
+        <section class="section-blog">
             <h2>Blog</h2>
 
-            <div class="home-blog-box-container">
-                <div class="home-blog-box">
-                    <img src="./assets/technology.jpg">
-                    <div class="home-blog-box-desc">
-                        <h3>My Journal 01 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima alias ab reiciendis, vitae eum! </p>
-                        <button class="button-home-seemore">See more...</button>
-                    </div>
+            <div class="home-blog">
+                <div class="home-blog-picture">
+                    <img src="./img/home/blog-overview.png" alt="">
                 </div>
-                <div class="home-blog-box">
-                    <img src="./assets/technology.jpg">
-                    <div class="home-blog-box-desc">
-                        <h3>My Journal 01 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima alias ab reiciendis, vitae eum! </p>
-                        <button class="button-home-seemore">See more...</button>
+                <div class="home-blog-body">
+                    <div class="home-blog-body-text">
+                        <p>
+                            I often create a writing like a blog. In my blog, i often tell a story about my trip, or sometimes
+                            i also tell about something interest that I want to share. Sometimes, i also share about something
+                            that need to be speaked up to public as an aspiration. Or sometimes, i also just wanna tell my own
+                            problem just to express my emotion and stress.
+                        </p>
                     </div>
-                </div>
-                <div class="home-blog-box">
-                    <img src="./assets/technology.jpg">
-                    <div class="home-blog-box-desc">
-                        <h3>My Journal 01 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima alias ab reiciendis, vitae eum! </p>
-                        <button class="button-home-seemore">See more...</button>
-                    </div>
-                </div>
-                <div class="home-blog-box">
-                    <img src="./assets/technology.jpg">
-                    <div class="home-blog-box-desc">
-                        <h3>My Journal 01 </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima alias ab reiciendis, vitae eum! </p>
-                        <button class="button-home-seemore">See more...</button>
+                    <div class="home-blog-body-button">
+                        <button class="button-home-seemore">
+                            <a href="./blog.html" style="color:white">
+                                See more...
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -156,29 +132,29 @@
         <section class="section-project">
             <h2>Project</h2>
 
-            <div class="home-project-box-container">
-                <div class="home-project-box">
-                    <h3>Project 1</h3>
-                    <img src="./assets/portfolio/cover-depagsos.jpg">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima aut
-                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
-                    <button class="button-home-seemore">See more...</button>
+            <div class="home-project">
+                <div class="home-project-body">
+                    <div class="home-project-body-text">
+                        <p>
+                            I often create a writing like a blog. In my blog, i often tell a story about my trip, or sometimes
+                            i also tell about something interest that I want to share. Sometimes, i also share about something
+                            that need to be speaked up to public as an aspiration. Or sometimes, i also just wanna tell my own
+                            problem just to express my emotion and stress.
+                        </p>
+                    </div>
+                    <div class="home-project-body-button">
+                        <button class="button-home-seemore">
+                            <a href="./portfolio.html" style="color:white">
+                                See more...
+                            </a>
+                        </button>
+                    </div>
                 </div>
-                <div class="home-project-box">
-                    <h3>Project 2</h3>
-                    <img src="./assets/portfolio/cover-depagsos.jpg">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima aut
-                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
-                    <button class="button-home-seemore">See more...</button>
-                </div>
-                <div class="home-project-box">
-                    <h3>Project 3</h3>
-                    <img src="./assets/portfolio/cover-depagsos.jpg">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In recusandae porro, sequi ratione harum minima aut
-                        voluptas enim aliquid impedit repellat sapiente similique nisi cumque?</p>
-                    <button class="button-home-seemore">See more...</button>
+                <div class="home-project-picture">
+                    <img src="./img/home/project-overview.png" alt="">
                 </div>
             </div>
+
         </section>
 
         <!-- FORM -->
@@ -259,17 +235,6 @@
                 document.querySelector(".form-overlay").classList.add("hidden");
             });
 
-            // document.addEventListener("keydown", function (e) {
-            //     console.log(e.key);
-
-            //     if (e.key === "Escape" && !document.querySelector("#form-window").classList.contains("hidden")) {
-            //         function () {
-            //             document.querySelector("#form-window").classList.add("hidden");
-            //             document.querySelector(".form-overlay").classList.add("hidden");
-            //         };
-            //     }
-            // });
-
             document.querySelector("#form-checkbox").addEventListener("click", function () {
                 if (document.querySelector("#form-checkbox").checked == true) {
                     document.querySelector(".form-button").classList.remove("disabled");
@@ -292,6 +257,10 @@
                 }
             }
             );
+        </script>
+
+        <script 
+            src="./package/swiper-bundle.min.js">
         </script>
 
     </body>
