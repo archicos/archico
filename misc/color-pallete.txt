@@ -1,0 +1,5 @@
+053B50 (low)
+176B87 (medium)
+64CCC5 (high)
+EEEEEE (light)
+222222 (dark)

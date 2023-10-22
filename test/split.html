@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./split.css">
+</head>
+<body>
+    <section class="split-screen">
+        <div class="layer right">
+            <div class="content-wrap">
+                <h1>Iphone 1</h1>
+                <img src="../../Multimedia/Jumbotron/Jumbotron.jpg" alt="">
+            </div>
+        </div>
+    
+        <div class="layer left">
+            <div class="content-wrap">
+                <h1>Sharper more detailed</h1>
+                <img src="../../Multimedia/Jumbotron/Jumbotron.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+                <img src="../../Multimedia/Jumbotron/Jumbotron.jpg" alt="">
+    </section>
+    <script>
+        // Get elements from the DOM
+            const wrapper = document.querySelector('.split-screen');
+            const topLayer = document.querySelector('.left');
+
+            // Add mouse move event
+            wrapper.addEventListener('mousemove', e => {
+                topLayer.style.width = e.clientX + 'px';
+            });
+    </script>
+</body>
+</html>
+

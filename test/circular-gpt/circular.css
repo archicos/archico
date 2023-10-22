@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+.progress-bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: transparent;
+    position: relative;
+    margin: 10px;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.mask {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: #f1f1f1;
+    transform-origin: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #3498db;
+}
+
+.percent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.number {
+    font-weight: 700;
+}
