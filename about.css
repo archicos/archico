@@ -348,3 +348,12 @@ body {
 .section-gallery img{
     border-radius: 5px;
 }
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1080px) {
+    .interest-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

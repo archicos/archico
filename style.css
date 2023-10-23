@@ -149,6 +149,7 @@ a {
 .nav-main {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .nav-main a {

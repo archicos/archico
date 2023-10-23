@@ -373,3 +373,111 @@ body .jumbotron {
     backdrop-filter: blur(3px);
     z-index: 5;
 }
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1280px) {
+
+    
+}
+
+@media (max-width: 1080px) {
+
+    /* BLOG */
+    .home-blog {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .home-blog-picture {
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+        padding-bottom: 20px;
+
+        height: auto;
+        width: auto;
+    }
+
+    .home-blog-picture img {
+        padding: 0px;
+        margin: 0px;
+        /* position: relative; */
+        height: 350px;
+        width: 350px;
+    }
+
+    .home-blog-body {
+        /* background-color: aquamarine; */
+        height: 200px;
+        width: 100%;
+        /* padding-top: 50px; */
+        padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    h2:not(#heading-about, #form-h2) {
+        padding-bottom: 0px;
+    }
+
+    /* PROJECT */
+    .section-project h2 {
+        margin-bottom: -50px;
+    }
+
+    .home-project {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        height: auto;
+        width: auto;
+    }
+
+    .section-project {
+        margin-bottom: 10px;
+    }
+
+    .home-project-picture {
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        padding-bottom: -50px;
+
+        height: auto;
+        width: auto;
+    }
+
+    .home-project-picture img {
+        padding: 0px;
+        margin: 0px;
+        /* position: relative; */
+        width: auto;
+
+        height: 350px;
+        width: 350px;
+    }
+
+    .home-project-body {
+        /* background-color: aquamarine; */
+        height: 200px;
+        width: 100%;
+        padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: left;
+    }
+
+    h2:not(#heading-about, #form-h2) {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
